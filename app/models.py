@@ -21,6 +21,7 @@ class Post(Base):
     title = Column(String, nullable=False)
     content = Column(Text, nullable=False)
     published = Column(Boolean, default=False)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)  # FK
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    tag = Column(String, nullable=True)  # NEW
 
     author = relationship("User", back_populates="posts")
