@@ -36,4 +36,3 @@ class Comment(Base):
  
     author = relationship("User")
     post = relationship("Post")
-    
