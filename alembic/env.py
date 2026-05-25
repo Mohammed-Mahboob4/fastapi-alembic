@@ -12,7 +12,7 @@ load_dotenv()
 
 # Import your Base and models so Alembic can detect them
 from app.database import Base
-from app.models import User , Post  # import all models here
+from app.models import User , Post, Comment  # import all models here
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
